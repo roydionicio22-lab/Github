@@ -26,7 +26,7 @@ CREATE TABLE ProcedimientoMedico (
     Nombre VARCHAR(150) NOT NULL,
     Costo DECIMAL(10,2) NOT NULL,
     Tipo VARCHAR(30) CHECK (Tipo IN ('Cirugía','Hospitalización','Consulta')),
-    DuracionEstimada INT -- minutos
+    DuracionEstimada INT -- 
 );
 GO
 ---------------
