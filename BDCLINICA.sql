@@ -10,16 +10,7 @@ GO
 USE ClinicaDB;
 GO
 -------------------
-CREATE TABLE Paciente (
-    IdPaciente INT IDENTITY(1,1) PRIMARY KEY,
-    Nombre VARCHAR(100),
-    Apellido VARCHAR(100),
-    DNI VARCHAR(8),
-    FechaNacimiento DATE,
-    Sexo CHAR(1),
-    TipoSangre VARCHAR(5)
-);
-GO
+
 ------------------
 CREATE TABLE ProcedimientoMedico (
     IdProcedimiento INT IDENTITY(1,1) PRIMARY KEY,
