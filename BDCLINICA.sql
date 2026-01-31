@@ -12,14 +12,6 @@ GO
 -------------------
 
 ------------------
-CREATE TABLE ProcedimientoMedico (
-    IdProcedimiento INT IDENTITY(1,1) PRIMARY KEY,
-    Nombre VARCHAR(150) NOT NULL,
-    Costo DECIMAL(10,2) NOT NULL,
-    Tipo VARCHAR(30) CHECK (Tipo IN ('Cirugía','Hospitalización','Consulta')),
-    DuracionEstimada INT -- 
-);
-GO
 ---------------
 CREATE TABLE AtencionMedica (
     IdAtencion INT IDENTITY(1,1) PRIMARY KEY,
